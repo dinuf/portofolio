@@ -1,0 +1,204 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button {
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/*-------------------------------------------*/
+
+h1, h4 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+h1 {
+    margin-top: 40px;
+    font-size: 3rem;
+    color: #525252;
+}
+h4 {
+    font-size: 1.5rem;
+    color: #696969;
+}
+
+h3 {
+    color: #00AAC7;
+    text-align: left;
+    font-family: "Istok Web";
+    font-size: 32px;
+    margin: 70px 0 10px 0;
+}
+
+.buttons p {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 150px;
+    margin: 25px 0;
+    
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.spot {
+    float:left;
+    height: 450px;
+    margin: 0 auto;
+    width: 600px;
+    position: relative;
+    z-index: -1;
+}
+
+.spot img {
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.wrapper .buttons {
+    color: #696969;
+    float:left;
+    width: 300px;
+    line-height: 24px;
+    height: 400px;
+    z-index: 999;
+}
+
+.buttons button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #696969;
+    height: 30px;
+    margin: 10px  0;
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    outline: 0;
+    transition: all .5s;
+    text-align: center;
+    width: 32%;
+    border: solid 1px #969696;
+}
+
+
+.buttons button:hover{
+    background-color: #01c4ff;
+    color:#fff;
+    border: none;
+}
+
+.spot .buttons button.wire {
+    border-radius: 25px 0 0 25px ;
+}
+
+.spot .buttons button.simple {
+    margin: 0 1%;
+}
+
+.spot .buttons button.render {
+    border-radius: 0 25px 25px 0;
+}
+
+
+/*
+.s {
+    animation-name: first;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.w {
+    animation-name: second;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes first {
+    0%   {opacity: 0;}
+    25% {opacity: 1;}
+    50%  {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes second {
+    0%   {opacity: 0;}
+    25%  {opacity: 1;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+*/
